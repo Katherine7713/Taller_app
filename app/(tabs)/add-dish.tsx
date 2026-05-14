@@ -36,7 +36,6 @@ export default function AddDish() {
     const [photo, setPhoto] = useState<string | null>(null);
     const [userId, setUserId] = useState("");
     
-    // New states for location
     const [locationData, setLocationData] = useState<LocationData | null>(null);
     const [showMap, setShowMap] = useState(false);
     const [tempCoords, setTempCoords] = useState<{lat: number, lng: number} | null>(null);
