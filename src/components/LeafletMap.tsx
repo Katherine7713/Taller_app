@@ -16,7 +16,7 @@ interface LeafletMapProps {
 export default function LeafletMap({ initialLocation, readOnly = false, onLocationSelect }: LeafletMapProps) {
   const webviewRef = useRef<WebView>(null);
 
-  const defaultLat = initialLocation?.lat ?? -0.2298500; // Default to Quito
+  const defaultLat = initialLocation?.lat ?? -0.2298500;
   const defaultLng = initialLocation?.lng ?? -78.5249500;
 
   const htmlContent = `
